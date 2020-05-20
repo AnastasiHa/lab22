@@ -24,7 +24,7 @@ int main(void) {
     std::cout << "Èçìåíåííûé òåêñò:" << std::endl;
     for(i=p;i>=0;i--) {
         //std::cout << arr[i] << std::endl;
-        if(arr[i] == "") { //arr[i] == input óñëîâèå äëÿ ïîèñêà çíà÷åíèÿ ïî ñòðîêå öåëèêîì à íå ïî åå ÷àñòè
+        if(arr[i] == "") {
             for(j=i+1;j<p;j++) {
                 std::cout << arr[j] << std::endl;
             }
