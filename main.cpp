@@ -2,35 +2,34 @@
 #include <string>
 #include <fstream>
 #include <Windows.h>
+#include <vector>
 
 int main(void) {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
     std::string input, ask;
-    std::string all, getcontent, arr[99];
+    std::string all, getcontent;
     int i=0, p=0, j=0;
-
+    std::vector<std::string> arr{};
     std::ifstream infile;
     infile.open("text.txt");
     if(infile.is_open()) {
         while(getline(infile,getcontent)) {
-            arr[i]=getcontent;
+            arr.push_back(getcontent);
             i++;
         }
     }
     p=i;
-    std::cout << "Ã‚Ã Ã°Ã¨Ã Ã­Ã² 22 Ã¯Ã°Ã¥Ã®Ã¡Ã°Ã Ã§Ã®Ã¢Ã Ã­Ã¨Ã¥ Ã Ã¡Ã§Ã Ã¶Ã¥Ã¢" << std::endl;
-    std::cout << "Ã€Ã¢Ã²Ã®Ã°: Ã•Ã Ã°Ã¨Ã²Ã®Ã­Ã®Ã¢Ã  Ã€Ã­Ã Ã±Ã²Ã Ã±Ã¨Ã¿" << std::endl << std::endl;
-    std::cout << "ÃˆÃ§Ã¬Ã¥Ã­Ã¥Ã­Ã­Ã»Ã© Ã²Ã¥ÃªÃ±Ã²:" << std::endl;
-    for(i=p;i>=0;i--) {
-        //std::cout << arr[i] << std::endl;
+    std::cout << "Âàðèàíò 22 ïðåîáðàçîâàíèå àáçàöåâ" << std::endl;
+    std::cout << "Àâòîð: Õàðèòîíîâà Àíàñòàñèÿ" << std::endl << std::endl;
+    std::cout << "Èçìåíåííûé òåêñò:" << std::endl;
+    for(i=p-1;i>=0;i--) {
         if(arr[i] == "") {
             for(j=i+1;j<p;j++) {
                 std::cout << arr[j] << std::endl;
             }
             std::cout << std::endl;
             p=i;
-           
         }
     }
     for(j=0;j<p;j++) {
