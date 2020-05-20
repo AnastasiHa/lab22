@@ -1,0 +1,3 @@
+C:/Users/inqus/CLionProjects/Variant_22/cmake-build-debug/CMakeFiles/Variant_22.dir
+C:/Users/inqus/CLionProjects/Variant_22/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/inqus/CLionProjects/Variant_22/cmake-build-debug/CMakeFiles/rebuild_cache.dir
